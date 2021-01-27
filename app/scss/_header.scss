@@ -144,13 +144,14 @@ header, .header {
   
 
 
-
+// Call to Action -social media invites Reader to do something.
     &__cta {
         color: #00f;
         background: linear-gradient(to right,lime, cyan);
         padding: 1rem 2rem;
         border-radius: 2rem;
         transition: opacity 300ms ease-in-out;
+        font-size: 1.7rem;
         
         &:hover {
             opacity: 0.75;
