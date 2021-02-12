@@ -1,3 +1,14 @@
 @import 'variables';
 @import 'globals';
 @import 'header';
+
+#overlay {
+    background-image: linear-gradient(to top,lime,transparent);
+    position: fixed;
+    top: 75px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: -1;
+}
