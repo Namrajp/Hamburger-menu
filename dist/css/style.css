@@ -20,14 +20,6 @@ a, a:link, a:visited {
   text-decoration: none;
 }
 
-.page-wrap {
-  color: black;
-  position: relative;
-  width: 900px;
-  height: 100vh;
-  margin: 0 auto;
-}
-
 header,
 .header {
   position: relative;
@@ -105,12 +97,12 @@ header__links a:hover::before,
 header__cta,
 .header__cta {
   color: #00f;
-  background: -webkit-gradient(linear, left top, right top, from(lime), to(cyan));
-  background: linear-gradient(to right, lime, cyan);
+  background: -webkit-gradient(linear, left top, right top, from(lime), to(orange));
+  background: linear-gradient(to right, lime, orange);
   border-radius: 2rem;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
 }
 
 header__cta:hover,
@@ -201,13 +193,22 @@ header__cta:hover,
   #about .container {
     padding: 2rem 2rem;
     width: 100vw;
-    text-align: justify;
   }
 }
 
+.page-wrap {
+  color: black;
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
 #overlay {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(lime), to(transparent));
-  background-image: linear-gradient(to top, lime, transparent);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(orange), to(transparent));
+  background-image: linear-gradient(to top, orange, transparent);
   position: fixed;
   top: 75px;
   right: 0;

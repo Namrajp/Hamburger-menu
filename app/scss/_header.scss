@@ -65,10 +65,10 @@ header,
   // Call to Action -social media invites Reader to do something.
   &__cta {
     color: #00f;
-    background: linear-gradient(to right, lime, cyan);
+    background: linear-gradient(to right, lime, orange);
     border-radius: 2rem;
     transition: opacity 300ms ease-in-out;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
 
     &:hover {
       opacity: 0.75;
