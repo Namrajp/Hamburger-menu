@@ -47,7 +47,7 @@ header,
     a {
       position: relative;
       color: #fff;
-
+      text-transform: uppercase;
     // a.active {
     //   background-color: rgb(147, 147, 228);
     // }  
@@ -67,7 +67,8 @@ header,
        &:hover::before{
         opacity: 1;
         background: linear-gradient(to right, lime, cyan);
-        width: 60%;
+        width: 77%;
+        margin:auto;
       }
     }
     /* Click on links changes its border before*/
@@ -76,6 +77,7 @@ header,
       background: linear-gradient(to right, lime, tomato);;
       padding: 0 1rem;
       width: 30%;
+      margin: auto;
     }
   }
   }  

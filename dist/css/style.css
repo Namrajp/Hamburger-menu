@@ -82,6 +82,7 @@ header__links li a,
 .header__links li a {
   position: relative;
   color: #fff;
+  text-transform: uppercase;
   /* On hover linear gradient border bottom applied*/
 }
 
@@ -104,7 +105,8 @@ header__links li a:hover::before,
   opacity: 1;
   background: -webkit-gradient(linear, left top, right top, from(lime), to(cyan));
   background: linear-gradient(to right, lime, cyan);
-  width: 60%;
+  width: 77%;
+  margin: auto;
 }
 
 header__links li.active > a::before,
@@ -114,6 +116,7 @@ header__links li.active > a::before,
   background: linear-gradient(to right, lime, tomato);
   padding: 0 1rem;
   width: 30%;
+  margin: auto;
 }
 
 header__cta,
