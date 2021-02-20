@@ -60,8 +60,9 @@
         padding: 0.7rem;
         font-size: 2rem;
         &::before {
-          height: 1px;
+          height: 5px;
           bottom: -5px;
+          margin: auto;
         }
         &:hover {
           background: #666;

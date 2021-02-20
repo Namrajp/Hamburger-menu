@@ -200,8 +200,9 @@ header__cta:hover,
     font-size: 2rem;
   }
   .header.mobile .header__links a::before {
-    height: 1px;
+    height: 5px;
     bottom: -5px;
+    margin: auto;
   }
   .header.mobile .header__links a:hover {
     background: #666;
