@@ -36,31 +36,49 @@ header,
   }
 
   &__links {
-    a {
-      position: relative;
-      color: #fff;
+    list-style-type: none;
+    margin: 0;
+    li {
+      float: left;
+      // display: inline-block;
       &:not(:last-child) {
         padding-right: 22px;
       }
+    a {
+      position: relative;
+      color: #fff;
+
+    // a.active {
+    //   background-color: rgb(147, 147, 228);
+    // }  
 
       &::before {
         content: "";
         display: block;
         position: absolute;
-        height: 7px;
+        height: 4px;
         left: 0;
         right: 0;
         bottom: -20px;
         opacity: 0;
         transition: opacity 300ms ease-in-out;
       }
-      &:hover::before {
+      /* On hover linear gradient border bottom applied*/
+       &:hover::before{
         opacity: 1;
         background: linear-gradient(to right, lime, cyan);
-        padding: 0 3rem;
+        width: 60%;
       }
     }
+    /* Click on links changes its border before*/
+    &.active>a::before{
+      opacity: 1;
+      background: linear-gradient(to right, lime, tomato);;
+      padding: 0 1rem;
+      width: 30%;
+    }
   }
+  }  
 
   // Call to Action -social media invites Reader to do something.
   &__cta {

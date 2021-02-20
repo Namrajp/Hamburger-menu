@@ -24,3 +24,18 @@ hamburg_btn.addEventListener('click', function() {
     }
 })
 
+/* Selecting the Nav menu */
+const list = document.querySelector('.header__links')
+const links = list.querySelectorAll('.nav-link');
+var current = document.getElementsByClassName("active");
+
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function() {
+        current[0].className = 
+        current[0].className.replace("active", "");
+        // current[0].classList.remove('active');
+        this.classList.add('active');
+    })
+}
+
+
