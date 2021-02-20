@@ -20,6 +20,25 @@ a, a:link, a:visited {
   text-decoration: none;
 }
 
+footer {
+  height: 145px;
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about, .work, .contacts, .home {
+  height: 100vh;
+  padding-top: 3rem;
+}
+
 header,
 .header {
   position: relative;
@@ -220,6 +239,41 @@ header__cta:hover,
     padding: 2rem 2rem;
     width: 100vw;
   }
+}
+
+.contact-form .form-group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.contact-form .btn-block {
+  width: 100%;
+  display: block;
+}
+
+.social-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.social-grid a {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+.social-grid a:hover > i, .social-grid a:hover {
+  color: lime;
+}
+
+.social-grid a.phone-icon {
+  margin-right: 20%;
 }
 
 .page-wrap {
