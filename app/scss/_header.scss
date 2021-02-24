@@ -50,7 +50,7 @@ header,
       text-transform: uppercase;
     // a.active {
     //   background-color: rgb(147, 147, 228);
-    // }  
+    // }  Before is pseudo element positioned abs with empty str as content..
 
       &::before {
         content: "";
@@ -59,7 +59,7 @@ header,
         height: 4px;
         left: 0;
         right: 0;
-        bottom: -20px;
+        bottom: -12px;
         opacity: 0;
         transition: opacity 300ms ease-in-out;
       }
@@ -70,15 +70,16 @@ header,
         width: 77%;
         margin:auto;
       }
+      &.active::before{
+        opacity: 1;
+        background: linear-gradient(to right, lime, tomato);;
+        padding: 0 1rem;
+        width: 30%;
+        margin: auto;
+      }
     }
     /* Click on links changes its border before*/
-    &.active>a::before{
-      opacity: 1;
-      background: linear-gradient(to right, lime, tomato);;
-      padding: 0 1rem;
-      width: 30%;
-      margin: auto;
-    }
+
   }
   }  
 
