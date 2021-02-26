@@ -284,7 +284,8 @@ header__cta:hover,
 .page-wrap {
   color: black;
   position: relative;
-  width: 900px;
+  max-width: 1100px;
+  width: 80%;
   margin: 0 auto;
   line-height: 1.4;
   font-family: Arial, Helvetica, sans-serif;
