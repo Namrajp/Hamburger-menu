@@ -52,13 +52,11 @@ header,
 
 header__breadcrumb,
 .header__breadcrumb {
-  background-color: lightgrey;
   margin: 0 auto;
   padding: 0.5rem 2rem;
   text-align: left;
   position: absolute;
   top: 100px;
-  width: 900px;
   left: 0;
   right: 0;
   cursor: pointer;
@@ -216,7 +214,7 @@ header__cta:hover,
     height: 75vh;
     text-align: center;
     position: absolute;
-    top: 5.6rem;
+    top: 0;
     left: 0;
     background-color: #777;
   }
@@ -284,7 +282,8 @@ header__cta:hover,
 .page-wrap {
   color: black;
   position: relative;
-  max-width: 1100px;
+  left: 0;
+  max-width: 1000px;
   width: 80%;
   margin: 0 auto;
   line-height: 1.4;
