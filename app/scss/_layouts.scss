@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.grid {
+    display: grid;
+    max-width: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 1fr 2fr; /* our ad block to be half the size of our first row and third*/
+
+}
+.ad {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid > div {
+    border: 1px dashed grey;
+    padding: 25px;
+}
+h1 {
+    margin-top: 0;
+}

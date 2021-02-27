@@ -39,8 +39,13 @@ footer {
           align-items: center;
 }
 
-.about, .work, .contacts, .home {
+.about, .contacts, .home {
   height: 100vh;
+  padding-top: 3rem;
+}
+
+.work {
+  height: auto;
   padding-top: 3rem;
 }
 
@@ -129,6 +134,11 @@ header__links li a:hover::before,
   background: linear-gradient(to right, lime, cyan);
   width: 77%;
   margin: auto;
+}
+
+header__links li a:hover,
+.header__links li a:hover {
+  border: 1px solid grey;
 }
 
 header__links li a.active::before,
@@ -279,11 +289,108 @@ header__cta:hover,
   margin-right: 20%;
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  max-width: auto;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 2fr 1fr 2fr;
+      grid-template-rows: 2fr 1fr 2fr;
+  /* our ad block to be half the size of our first row and third*/
+}
+
+.ad {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid > div {
+  border: 1px dashed grey;
+  padding: 25px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  text-align: center;
+  color: black;
+}
+
+.grid-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Mobile first layout complete */
+  /* Tablet second layout begin */
+}
+
+.grid-gallery a:hover {
+  background-color: tomato;
+  color: black;
+  padding: 0.3rem;
+}
+
+.grid-gallery .cell {
+  margin: 1rem;
+}
+
+.grid-gallery .cell .cell img {
+  display: block;
+}
+
+.grid-gallery .cell .cell img img:hover {
+  -webkit-transform: translateY(-0.4rem);
+          transform: translateY(-0.4rem);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+/* Laptop layout begin */
+@media screen and (min-width: 800px) {
+  .cell {
+    width: calc(100%/3 - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100%/4 - 2rem);
+  }
+}
+
 .page-wrap {
   color: black;
   position: relative;
   left: 0;
-  max-width: 1000px;
+  max-width: 1300px;
   width: 80%;
   margin: 0 auto;
   line-height: 1.4;

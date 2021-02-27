@@ -1,0 +1,62 @@
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+    text-align: center;
+    color: black;
+
+ }
+
+.grid-gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    & a:hover {
+        background-color: tomato;
+        color: black;
+        padding: 0.3rem;
+        
+    }
+    /* Mobile first layout complete */
+/* Tablet second layout begin */
+    .cell {
+        
+        margin: 1rem;
+        .cell img {
+            display: block;
+        
+            & img:hover {
+                transform: translateY(-0.4rem);
+                transform: scale(1.2);
+            }
+        }
+        
+    }
+}
+.responsive-image {
+    max-width: 100%;
+}
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    .cell {
+        width: calc(50% - 2rem);
+    }
+}
+
+/* Laptop layout begin */
+
+@media screen and (min-width: 800px) {
+    .cell {
+        width: calc(100%/3 - 2rem);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .cell {
+        width: calc(100%/4 - 2rem);
+    }
+}

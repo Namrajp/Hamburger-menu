@@ -5,12 +5,15 @@
 @import 'header';
 @import 'media';
 @import 'contacts';
+@import 'layouts';
+@import 'gallery';
+
 
 .page-wrap {
     color: black;
     position: relative;
     left: 0;
-    max-width: 1000px;
+    max-width: 1300px;
     width: 80%;
     margin: 0 auto;
     line-height: 1.4;

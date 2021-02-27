@@ -71,6 +71,9 @@ header,
         width: 77%;
         margin:auto;
       }
+      &:hover {
+        border: 1px solid grey;
+      }
       &.active::before{
         opacity: 1;
         background: linear-gradient(to right, lime, tomato);;
