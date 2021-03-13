@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-
+@import url('https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,400i,700');
 @import 'variables';
 @import 'globals';
 @import 'header';
@@ -7,28 +7,5 @@
 @import 'contacts';
 @import 'layouts';
 @import 'gallery';
+@import 'columns';
 
-
-.page-wrap {
-    color: black;
-    position: relative;
-    left: 0;
-    max-width: 1300px;
-    width: 80%;
-    margin: 0 auto;
-    line-height: 1.4;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: justify;
-    // z-index: 999;
-}
-
-#overlay {
-    background-image: linear-gradient(to top,orange,transparent);
-    position: fixed;
-    top: 75px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    z-index: -1;
-}

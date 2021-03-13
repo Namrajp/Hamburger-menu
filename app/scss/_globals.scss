@@ -15,22 +15,68 @@ body {
 html,h1,h2,h3,h4,h5,h6,a{
     font-family: "Raleway";
    }
+ h1 {
+     margin-top: 1.8rem;
+ }  
 a, a:link, a:visited {
     text-decoration: none;
 }
 
 footer {
-    height: 55px;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.about, .contacts, .home {
-    height: 100vh;
-    padding-top: 3rem;
-}
-.work {
     height: auto;
+    width: 100vw;
+    background-color: #666;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+// .about, .contacts, .home {
+//     height: 100vh;
+//     padding-top: 3rem;
+// }
+.work {
+    height: 100%;
     padding-top: 3rem;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+    text-align: left;
+    color: black;
+
+    h1 {
+        margin-top: 1.8rem;
+    } 
+ }
+
+
+.page-wrap {
+    color: black;
+    position: relative;
+    left: 0;
+    max-width: 1300px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.4;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    // z-index: 999;
+}
+
+#overlay {
+    background-image: linear-gradient(to top,orange,transparent);
+    position: fixed;
+    top: 75px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: -1;
+}
+
+.header__cta {
+    padding: 10px;
 }

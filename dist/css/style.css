@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,400i,700");
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -21,32 +22,75 @@ html, h1, h2, h3, h4, h5, h6, a {
   font-family: "Raleway";
 }
 
+h1 {
+  margin-top: 1.8rem;
+}
+
 a, a:link, a:visited {
   text-decoration: none;
 }
 
 footer {
-  height: 55px;
-  background-color: blue;
+  height: auto;
+  width: 100vw;
+  background-color: #666;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.about, .contacts, .home {
-  height: 100vh;
-  padding-top: 3rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .work {
-  height: auto;
+  height: 100%;
   padding-top: 3rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  text-align: left;
+  color: black;
+}
+
+.container h1 {
+  margin-top: 1.8rem;
+}
+
+.page-wrap {
+  color: black;
+  position: relative;
+  left: 0;
+  max-width: 1300px;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+#overlay {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(orange), to(transparent));
+  background-image: linear-gradient(to top, orange, transparent);
+  position: fixed;
+  top: 75px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+}
+
+.header__cta {
+  padding: 10px;
 }
 
 header,
@@ -153,10 +197,10 @@ header__links li a.active::before,
 
 header__cta,
 .header__cta {
-  color: #00f;
+  color: #333;
   background: -webkit-gradient(linear, left top, right top, from(lime), to(orange));
   background: linear-gradient(to right, lime, orange);
-  border-radius: 2rem;
+  border-radius: 1rem;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
   font-size: 1.1rem;
@@ -254,6 +298,14 @@ header__cta:hover,
   }
 }
 
+.contacts {
+  margin: 3rem;
+}
+
+.contact-form {
+  margin-bottom: 3rem;
+}
+
 .contact-form .form-group:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -267,13 +319,16 @@ header__cta:hover,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .social-grid a {
@@ -281,12 +336,58 @@ header__cta:hover,
   margin-bottom: 1rem;
 }
 
-.social-grid a:hover > i, .social-grid a:hover {
-  color: lime;
+.social-grid a > i.fab {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #eee;
+  background-color: dodgerblue;
 }
 
-.social-grid a.phone-icon {
-  margin-right: 20%;
+.social-grid a > i.fab:hover {
+  background-color: green;
+}
+
+.contacts-col:first-of-type {
+  background-color: #333;
+  color: white;
+  width: 100vw;
+  padding: 2rem 5rem;
+}
+
+.contacts-col:last-of-type {
+  background-color: green;
+  text-align: center;
+  color: white;
+  width: 100vw;
+  padding: 2rem;
+}
+
+footer {
+  height: auto;
+  width: 100vw;
+  background-color: #666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contacts .row {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -324,14 +425,6 @@ h1 {
   margin-top: 0;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 1rem;
-  max-width: 1200px;
-  text-align: center;
-  color: black;
-}
-
 .grid-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,6 +460,7 @@ h1 {
   max-width: 100%;
 }
 
+/* Mobile layout complete for gallery , now bigger screens begin */
 @media screen and (min-width: 600px) {
   .cell {
     width: calc(50% - 2rem);
@@ -386,27 +480,82 @@ h1 {
   }
 }
 
-.page-wrap {
-  color: black;
-  position: relative;
-  left: 0;
-  max-width: 1300px;
-  width: 80%;
-  margin: 0 auto;
-  line-height: 1.4;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: justify;
+a:hover {
+  text-decoration: none;
 }
 
-#overlay {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(orange), to(transparent));
-  background-image: linear-gradient(to top, orange, transparent);
-  position: fixed;
-  top: 75px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  z-index: -1;
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.column-narrow {
+  width: 35%;
+  float: left;
+  padding-right: 3%;
+  min-height: 175px;
+}
+
+.column-wide {
+  width: 62%;
+  float: left;
+  min-height: 175px;
+}
+
+/* Header & Footer 
+------------------------------------*/
+.about {
+  background: #2B2D42;
+  color: #8D99AE;
+  overflow: hidden;
+}
+
+.about .about-self {
+  overflow: auto;
+}
+
+.profile-img {
+  /*width: 300px;*/
+  border-radius: 50%;
+  /*float: left;*/
+  /*margin-right: 30px;*/
+}
+
+/* Footer styles only */
+footer {
+  text-align: center;
+}
+
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Work Experience
+------------------------------------*/
+.work {
+  background: #333;
+}
+
+/* Education
+------------------------------------*/
+.education {
+  background: #8D99AE;
 }
 /*# sourceMappingURL=style.css.map */

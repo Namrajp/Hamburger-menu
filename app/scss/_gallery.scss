@@ -1,11 +1,3 @@
-.container {
-    margin: 0 auto;
-    padding: 0 1rem;
-    max-width: 1200px;
-    text-align: center;
-    color: black;
-
- }
 
 .grid-gallery {
     display: flex;
@@ -36,10 +28,7 @@
 .responsive-image {
     max-width: 100%;
 }
-
-
-
-
+/* Mobile layout complete for gallery , now bigger screens begin */
 
 @media screen and (min-width: 600px) {
     .cell {
