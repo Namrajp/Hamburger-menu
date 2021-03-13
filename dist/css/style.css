@@ -435,7 +435,13 @@ h1 {
   /* Tablet second layout begin */
 }
 
-.grid-gallery a:hover {
+.grid-gallery p {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #990033;
+}
+
+.grid-gallery a:hover p {
   background-color: tomato;
   color: black;
   padding: 0.3rem;
@@ -471,12 +477,6 @@ h1 {
 @media screen and (min-width: 800px) {
   .cell {
     width: calc(100%/3 - 2rem);
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .cell {
-    width: calc(100%/4 - 2rem);
   }
 }
 
