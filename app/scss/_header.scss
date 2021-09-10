@@ -32,7 +32,7 @@ header,
     align-items: center;
     background: blue;
     font-size: 22px;
-    
+
     z-index: 9999;
   }
 
@@ -45,59 +45,57 @@ header,
       &:not(:last-child) {
         padding-right: 22px;
       }
-    a {
-      position: relative;
-      color: #fff;
-      text-transform: uppercase;
-    // a.active {
-    //   background-color: rgb(147, 147, 228);
-    // }  Before is pseudo element positioned abs with empty str as content..
+      a {
+        position: relative;
+        color: #fff;
+        text-transform: uppercase;
+        // a.active {
+        //   background-color: rgb(147, 147, 228);
+        // }  Before is pseudo element positioned abs with empty str as content..
 
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 4px;
-        left: 0;
-        right: 0;
-        bottom: -12px;
-        opacity: 0;
-        transition: opacity 300ms ease-in-out;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 4px;
+          left: 0;
+          right: 0;
+          bottom: -12px;
+          opacity: 0;
+          transition: opacity 300ms ease-in-out;
+        }
+        /* On hover linear gradient border bottom applied*/
+        &:hover::before {
+          opacity: 1;
+          background: linear-gradient(to right, lime, cyan);
+          width: 77%;
+          margin: auto;
+        }
+        &:hover {
+          border: 1px solid grey;
+        }
+        &.active::before {
+          opacity: 1;
+          background: linear-gradient(to right, lime, tomato);
+          padding: 0 1rem;
+          width: 30%;
+          margin: auto;
+        }
       }
-      /* On hover linear gradient border bottom applied*/
-       &:hover::before{
-        opacity: 1;
-        background: linear-gradient(to right, lime, cyan);
-        width: 77%;
-        margin:auto;
-      }
-      &:hover {
-        border: 1px solid grey;
-      }
-      &.active::before{
-        opacity: 1;
-        background: linear-gradient(to right, lime, tomato);;
-        padding: 0 1rem;
-        width: 30%;
-        margin: auto;
-      }
+      /* Click on links changes its border before*/
     }
-    /* Click on links changes its border before*/
-
   }
-  }  
 
   // Call to Action -social media invites Reader to do something.
   &__cta {
     color: #333;
     background: linear-gradient(to right, lime, orange);
-    border-radius: 1rem;
+    border-radius: 0.4rem;
     transition: opacity 300ms ease-in-out;
     font-size: 1.1rem;
-
+    padding: 0.4rem;
     &:hover {
       opacity: 0.75;
     }
   }
 }
-

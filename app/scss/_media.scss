@@ -15,7 +15,7 @@
         height: 3px;
         background: #fff;
         margin-bottom: 2px;
-        transform-origin: 4px 3px;
+        transform-origin: 5px 3px;
       }
       &.open > span:first-child {
         transform: rotate(45deg);
@@ -71,17 +71,14 @@
     }
     nav {
       z-index: 9999;
-
     }
   }
 }
 
-
 // Content inside page
 @media only screen and (max-width: 700px) {
-
-    #about .container {
-      padding: 2rem 2rem;
-      width: 100vw;
-    }
+  #about .container {
+    padding: 2rem 2rem;
+    width: 100vw;
+  }
 }

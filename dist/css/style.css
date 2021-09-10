@@ -2,13 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,400i,700");
 html {
   font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -34,18 +32,10 @@ footer {
   height: auto;
   width: 100vw;
   background-color: #666;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 
 .work {
@@ -78,7 +68,6 @@ footer {
 }
 
 #overlay {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(orange), to(transparent));
   background-image: linear-gradient(to top, orange, transparent);
   position: fixed;
   top: 75px;
@@ -119,14 +108,9 @@ header nav,
   left: 0;
   width: 100%;
   height: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   background: blue;
   font-size: 22px;
   z-index: 9999;
@@ -167,14 +151,12 @@ header__links li a::before,
   right: 0;
   bottom: -12px;
   opacity: 0;
-  -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
 }
 
 header__links li a:hover::before,
 .header__links li a:hover::before {
   opacity: 1;
-  background: -webkit-gradient(linear, left top, right top, from(lime), to(cyan));
   background: linear-gradient(to right, lime, cyan);
   width: 77%;
   margin: auto;
@@ -188,7 +170,6 @@ header__links li a:hover,
 header__links li a.active::before,
 .header__links li a.active::before {
   opacity: 1;
-  background: -webkit-gradient(linear, left top, right top, from(lime), to(tomato));
   background: linear-gradient(to right, lime, tomato);
   padding: 0 1rem;
   width: 30%;
@@ -198,12 +179,11 @@ header__links li a.active::before,
 header__cta,
 .header__cta {
   color: #333;
-  background: -webkit-gradient(linear, left top, right top, from(lime), to(orange));
   background: linear-gradient(to right, lime, orange);
-  border-radius: 1rem;
-  -webkit-transition: opacity 300ms ease-in-out;
+  border-radius: 0.4rem;
   transition: opacity 300ms ease-in-out;
   font-size: 1.1rem;
+  padding: 0.4rem;
 }
 
 header__cta:hover,
@@ -228,19 +208,16 @@ header__cta:hover,
     height: 3px;
     background: #fff;
     margin-bottom: 2px;
-    -webkit-transform-origin: 4px 3px;
-            transform-origin: 4px 3px;
+    transform-origin: 5px 3px;
   }
   .header__menu.open > span:first-child {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   .header__menu.open > span:nth-child(2) {
     opacity: 0;
   }
   .header__menu.open > span:last-child {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   .header__logo {
     position: absolute;
@@ -257,13 +234,8 @@ header__cta:hover,
     top: 5%;
   }
   .header.mobile .header__links {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 80vw;
     height: 75vh;
     text-align: center;
@@ -316,19 +288,10 @@ header__cta:hover,
 }
 
 .social-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .social-grid a {
@@ -372,18 +335,10 @@ footer {
   height: auto;
   width: 100vw;
   background-color: #666;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 
 .contacts .row {
@@ -391,28 +346,20 @@ footer {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
   max-width: auto;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  -ms-grid-rows: 2fr 1fr 2fr;
-      grid-template-rows: 2fr 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 1fr 2fr;
   /* our ad block to be half the size of our first row and third*/
 }
 
 .ad {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 3;
 }
 
@@ -426,11 +373,8 @@ h1 {
 }
 
 .grid-gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   /* Mobile first layout complete */
   /* Tablet second layout begin */
 }
@@ -456,10 +400,8 @@ h1 {
 }
 
 .grid-gallery .cell .cell img img:hover {
-  -webkit-transform: translateY(-0.4rem);
-          transform: translateY(-0.4rem);
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: translateY(-0.4rem);
+  transform: scale(1.2);
 }
 
 .responsive-image {
@@ -558,4 +500,3 @@ footer {
 .education {
   background: #8D99AE;
 }
-/*# sourceMappingURL=style.css.map */

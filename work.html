@@ -1,139 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburger menu</title>
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-    crossorigin="anonymous"
-  />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="dist/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger menu</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/css/style.css">
 </head>
+
 <body>
   <header class="header">
 
     <nav>
-        <div class="header__logo">
-            Logo
-        </div>
-        <a id="hamburg-btn" href="#" class="header__menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
+      <div class="header__logo">
+        Logo
+      </div>
+      <a id="hamburg-btn" href="#" class="header__menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
 
-        <ul id ="nav" class="header__links">
-            <li><a class="nav-link" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="about.html">About</a></li>
-            <li><a class="nav-link" href="work.html">Work</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-        <button class="header__cta">Documentation</button>
-   
+      <ul id="nav" class="header__links">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="work.html">Work</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="header__cta">Documentation</button>
+
     </nav>
 
     <div class="header__breadcrumb">
-        <div class="page-wrap">
-            <a href="index.html">Home /</a>
-            <span><a href="work.html">Work</a></span>
-        </div>
-        
+      <div class="page-wrap">
+        <a href="index.html">Home /</a>
+        <span id="current_page"></span>
+      </div>
+
     </div>
-</header>
+  </header>
 
 
-    <div id="work" class="page-wrap">
-      <section class="work container">
-        <h1> Some of my Projects</h1>
-        <p>These are some of my Projects so far</p>
-        <div class="grid-gallery">
-          <div class="cell">
-            <a href="https://namrajp.github.io/html-css-ref/">
-              <img src="https://github.com/Namrajp/html-css-ref/blob/master/images/boxModel.jpg?raw=true" class="responsive-image" />
-              <p><span>Technical Documentation</span></p></a>
-          </div>
-          <div class="cell">
-            <a href="https://namrajp.github.io/Product-Landing/">
-              <img src="https://github.com/Namrajp/html-css-ref/blob/master/images/Product-landing.png?raw=true" class="responsive-image" />
-              <p><span>Cycling and Health</span></p></a>
-          </div>
-          <div class="cell">
-            <a href="https://namrajp.github.io/ticTacToe/">
-              <img src="https://github.com/Namrajp/ticTacToe/blob/master/tic-tac.png?raw=true" class="responsive-image" />
-              <p><span>Tic Toe Game</span></p></a>
-          </div>
-          <div class="cell">
-            <a href="https://namrajp.github.io/todosApp-Revised/">
-              <img src="https://github.com/Namrajp/todosApp-Revised/blob/master/todo-List-app.png?raw=true" class="responsive-image" />
-              <p><span>Todos App</span></p></a>
-          </div>
-          
-            <div class="cell">
-              <img src="http://placehold.it/800x800" class="responsive-image" />
-              <a><span>Product name</span></a>
-            </div>
-            <div class="cell">
-              <img src="http://placehold.it/800x800" class="responsive-image" />
-              <a><span>Product name</span></a>
-  
-            </div>
-            <div class="cell">
-              <img src="http://placehold.it/800x800" class="responsive-image" />
-              <a><span>Product name</span></a>
-            </div>
-            <div class="cell">
-              <img src="http://placehold.it/800x800" class="responsive-image" />
-              <a><span>Product name</span></a>
-            </div>
+  <div id="work" class="page-wrap">
+    <section class="work container">
+      <h1> Some of my Projects</h1>
+      <p>These are some of my Projects so far</p>
+      <div class="grid-gallery">
+        <div class="cell">
+          <a href="https://namrajp.github.io/html-css-ref/">
+            <img src="https://github.com/Namrajp/html-css-ref/blob/master/images/boxModel.jpg?raw=true"
+              class="responsive-image" />
+            <p><span>Technical Documentation</span></p>
+          </a>
+        </div>
+        <div class="cell">
+          <a href="https://namrajp.github.io/Product-Landing/">
+            <img src="https://github.com/Namrajp/html-css-ref/blob/master/images/Product-landing.png?raw=true"
+              class="responsive-image" />
+            <p><span>Cycling and Health</span></p>
+          </a>
+        </div>
+        <div class="cell">
+          <a href="https://namrajp.github.io/ticTacToe/">
+            <img src="https://github.com/Namrajp/ticTacToe/blob/master/tic-tac.png?raw=true" class="responsive-image" />
+            <p><span>Tic Toe Game</span></p>
+          </a>
+        </div>
+        <div class="cell">
+          <a href="https://namrajp.github.io/todosApp-Revised/">
+            <img src="https://github.com/Namrajp/todosApp-Revised/blob/master/todo-List-app.png?raw=true"
+              class="responsive-image" />
+            <p><span>Todos App</span></p>
+          </a>
+        </div>
 
-            <div class="cell">
-                <img src="http://placehold.it/800x800" class="responsive-image" />
-                <a><span>Product name</span></a>
-              </div>
-              <div class="cell">
-                <img src="http://placehold.it/800x800" class="responsive-image" />
-                <a><span>Product name</span></a>
-    
-              </div>
-              <div class="cell">
-                <img src="http://placehold.it/800x800" class="responsive-image" />
-                <a><span>Product name</span></a>
-              </div>
-              <div class="cell">
-                <img src="http://placehold.it/800x800" class="responsive-image" />
-                <a><span>Product name</span></a>
-              </div>
+        <div class="cell">
+          <img src="http://placehold.it/800x800" class="responsive-image" />
+          <a><span>Product name</span></a>
+        </div>
+        <div class="cell">
+          <img src="http://placehold.it/800x800" class="responsive-image" />
+          <a><span>Product name</span></a>
+
+        </div>
+        <div class="cell">
+          <img src="http://placehold.it/800x800" class="responsive-image" />
+          <a><span>Product name</span></a>
+        </div>
+        <div class="cell">
+          <img src="http://placehold.it/800x800" class="responsive-image" />
+          <a><span>Product name</span></a>
+        </div>
+
+        <div class="cell">
+          <img src="http://placehold.it/800x800" class="responsive-image" />
+          <a><span>Product name</span></a>
+        </div>
+        <div class="cell">
+          <img src="http://placehold.it/800x800" class="responsive-image" />
+          <a><span>Product name</span></a>
+
+        </div>
+        <div class="cell">
+          <img src="http://placehold.it/800x800" class="responsive-image" />
+          <a><span>Product name</span></a>
+        </div>
+        <div class="cell">
+          <img src="http://placehold.it/800x800" class="responsive-image" />
+          <a><span>Product name</span></a>
+        </div>
 
 
-          </div>
+      </div>
     </section>
-</div>    
+  </div>
 
-<footer>
-  <div class="content-wrap">
+  <footer>
+    <div class="content-wrap">
       <h2>Let's Keep in Touch!</h2>
-      
+
       <!-- Social media and contact links. Add or remove any networks. -->
       <div class="contact-info">
-          <a href="onesimplecode@outlook.com">email@example.com</a>
-          <a href="http://namrajpudasaini.com">yourwebsite.com</a>
-          <a href="#">Twitter</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Facebook</a>
+        <a href="onesimplecode@outlook.com">email@example.com</a>
+        <a href="http://namrajpudasaini.com">yourwebsite.com</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Facebook</a>
       </div>
 
       <p>Copyright 2021 by Namraj Pudasaini</p>
-  </div>
-</footer><script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-<script src="app/js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="app/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
